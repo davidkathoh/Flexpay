@@ -1,0 +1,15 @@
+{
+  "name": "flexpay",
+  "version": "1.0.0",
+  "description": "FlexPay: Simplify mobile money payment integration with Airtel Money, Orange Money, Afrimoney, and M-Pesa. Effortlessly incorporate secure and seamless payment processing into your applications. Streamline your payment integration process with FlexPay.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "David Kathoh",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
