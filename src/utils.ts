@@ -1,4 +1,5 @@
-export const BASE_URL = "https://backend.flexpay.cd/api/rest/v1/paymentService"
+export const BASE_URL_PAY = "https://backend.flexpay.cd/api/rest/v1/paymentService"
+export const BASE_URL_CHECK = "https://backend.flexpay.cd/api/rest/v1/check/"
 export interface ConstructorParams {
     apiKey:string,
     webhookUrl:string,
@@ -16,7 +17,7 @@ export interface PayApiResponse {
     message: string;
     orderNumber?: string;
 }
-export class  PayApiErrorResponse {
+export class ApiErrorResponse {
 
     readonly message: string;
     readonly orderNumber?: string;
@@ -38,4 +39,20 @@ export interface PaymentResul {
     provider_reference: string;
     isSuccessFull?:boolean
 }
+
+export interface TransactionCheck {
+    code: string;
+    message: string;
+    transaction: {
+        reference: string;
+        amount: string;
+        amountCustomer: string;
+        currency: string;
+        createdAt: string;
+        status: string;
+        channel: string;
+    };
+}
+
+
 
